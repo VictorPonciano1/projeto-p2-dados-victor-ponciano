@@ -4,10 +4,8 @@ public class Usuario {
 
     // MATRICULA DO USUARIO
     private int matricula;
-
     // NOME COMPLETO DO USUARIO
     private String nome;
-
     // EMAIL DO USUARIO
     private String email;
 
@@ -20,27 +18,25 @@ public class Usuario {
         this.email = email;
     }
 
-    // RETORNA A MATRICULA DO USUARIO
+    // MATRICULA
     public int getMatricula() {
         return matricula;
     }
 
-    // RETORNA O NOME DO USUARIO
+    // NOME
     public String getNome() {
         return nome;
     }
 
-    // RETORNA O EMAIL DO USUARIO
+    // EMAIL
     public String getEmail() {
         return email;
     }
-
-    // ALTERA O EMAIL DO USUARIO
     public void setEmail(String email) {
         this.email = email;
     }
 
-    // RETORNA UMA REPRESENTACAO TEXTUAL DO USUARIO
+    // TOSTRING PARA EXIBIR AS INFORMACOES DO USUARIO
     @Override
     public String toString() {
         return "Matricula: " + matricula
@@ -51,17 +47,13 @@ public class Usuario {
     // COMPARA DOIS USUARIOS PELA MATRICULA
     @Override
     public boolean equals(Object obj) {
-
         if (this == obj) {
             return true;
         }
-
         if (obj == null || getClass() != obj.getClass()) {
             return false;
         }
-
         Usuario outro = (Usuario) obj;
-
         return this.matricula == outro.matricula;
     }
 }
