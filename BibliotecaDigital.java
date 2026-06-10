@@ -93,8 +93,6 @@ public class BibliotecaDigital {
                     System.out.print("Digite o email do usuario solicitante: ");
                     String emailUsuario = scanner.nextLine();
 
-                    scanner.nextLine(); // LIMPA O BUFFER
-
                     Usuario usuario = new Usuario(raUsuario, nomeUsuario, emailUsuario);
                     biblioteca.gestor.solicitarEmprestimo(isbnEmprestimo, usuario);
                 break;
